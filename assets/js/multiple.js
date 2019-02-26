@@ -12,5 +12,15 @@
  * @return {number}
  */
 function multiple(a, b) {
-
+let p=0;
+if(b<0){
+    a=-a;
+    b=Math.abs(b);
 }
+ for(let i=0;i<b;i++)
+{
+p+=a;
+}
+return p;
+}
+console.log(multiple(2,4));
