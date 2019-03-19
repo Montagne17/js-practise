@@ -12,6 +12,13 @@
  * @param  {string} input строка с произвольным предложением.
  * @return {string}
  */
-function capitalize(input) {
+    function capitalize(str) { 
+        return str.split(" ") 
+        .map(function (item) { 
+        return (item.charAt(0).toUpperCase() + item.slice(1)); 
+        }) 
+        .join(" "); 
+        }
+        let str = "Привет язык Си"; 
+        console.log(capitalize(str));
 
-}
